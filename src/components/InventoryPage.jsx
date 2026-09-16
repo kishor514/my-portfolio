@@ -24,8 +24,8 @@ export default function InventoryPage({ onBack, onNavigate }) {
         </button>
 
         {/* Large Image Header */}
-        <div className="rounded-[2rem] bg-[#111] border border-white/5 overflow-hidden p-4 sm:p-6 pb-8 sm:pb-10 flex flex-col">
-          <div className="w-full rounded-[1.5rem] overflow-hidden mb-8 flex items-center justify-center aspect-[16/9] sm:aspect-[2/1]">
+        <div className="rounded-[2.5rem] bg-[#111] border-2 border-white/20 overflow-hidden p-4 sm:p-6 pb-8 sm:pb-10 flex flex-col">
+          <div className="w-full rounded-[2rem] overflow-hidden mb-8 flex items-center justify-center aspect-[16/9] sm:aspect-[2/1]">
             <img src="/images/inventory2.png" alt="Inventory platform" className="w-full h-full object-cover" />
           </div>
           <div className="px-2 sm:px-4">
@@ -35,7 +35,7 @@ export default function InventoryPage({ onBack, onNavigate }) {
         </div>
 
         {/* Profile and Project Description Row */}
-        <div className="rounded-[2rem] bg-[#111] border border-white/5 p-8 sm:p-10">
+        <div className="rounded-[2.5rem] bg-[#111] border-2 border-white/20 p-8 sm:p-10">
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-6 mb-12">
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-full overflow-hidden bg-white/10 flex-shrink-0">
@@ -47,7 +47,7 @@ export default function InventoryPage({ onBack, onNavigate }) {
               </div>
             </div>
             
-            <div className="bg-lime text-black p-6 rounded-[1.5rem] sm:max-w-[280px]">
+            <div className="bg-lime text-black p-6 rounded-[2rem] sm:max-w-[280px]">
               <p className="font-medium mb-6">Efficient inventory tracking and stock management system.</p>
               <button onClick={() => alert("Please open link manually: https://srivishnuvilassfoods.com/")} className="inline-flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#222] transition-colors">
                 Visit Site <span className="text-xs">↗</span>
@@ -66,7 +66,7 @@ export default function InventoryPage({ onBack, onNavigate }) {
 
         {/* Second Image and Details */}
         <div className="space-y-8">
-          <div className="w-full bg-white rounded-[2rem] border border-white/5 overflow-hidden flex items-center justify-center aspect-[16/9] sm:aspect-[2/1]">
+          <div className="w-full bg-white rounded-[2.5rem] border-2 border-white/20 overflow-hidden flex items-center justify-center aspect-[16/9] sm:aspect-[2/1]">
             <img src="/images/inventory.png" alt="Product details" className="w-full h-full object-cover" />
           </div>
 
@@ -76,7 +76,7 @@ export default function InventoryPage({ onBack, onNavigate }) {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              className="bg-lime text-black rounded-[2rem] p-8 relative overflow-hidden flex flex-col justify-center min-h-[200px]"
+              className="bg-lime text-black rounded-[2.5rem] p-8 relative overflow-hidden flex flex-col justify-center min-h-[200px]"
             >
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-1.5 h-1.5 rounded-full bg-black"></div>
@@ -98,7 +98,7 @@ export default function InventoryPage({ onBack, onNavigate }) {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              className="bg-[#111] border border-white/5 rounded-[2rem] p-8 flex flex-col justify-center min-h-[200px]"
+              className="bg-[#111] border-2 border-white/20 rounded-[2.5rem] p-8 flex flex-col justify-center min-h-[200px]"
             >
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-1.5 h-1.5 rounded-full bg-white"></div>
@@ -110,7 +110,7 @@ export default function InventoryPage({ onBack, onNavigate }) {
         </div>
 
         {/* Development Details */}
-        <div className="rounded-[2rem] bg-[#111] border border-white/5 p-8 sm:p-10">
+        <div className="rounded-[2.5rem] bg-[#111] border-2 border-white/20 p-8 sm:p-10">
           <h2 className="text-2xl font-bold mb-6">Development & Technology</h2>
           <div className="space-y-6 text-[#a0a0a0] leading-[1.8]">
             <p>I worked on the frontend using HTML, CSS, and JavaScript to create responsive and user-friendly interfaces for the inventory system. I developed the backend using PHP to handle application logic, data processing, and system operations. I also implemented interactive features to make daily inventory tasks easier to manage.</p>
@@ -119,7 +119,7 @@ export default function InventoryPage({ onBack, onNavigate }) {
         </div>
 
         {/* Result */}
-        <div className="rounded-[2rem] bg-[#111] border border-white/5 p-8 sm:p-10">
+        <div className="rounded-[2.5rem] bg-[#111] border-2 border-white/20 p-8 sm:p-10">
           <h2 className="text-2xl font-bold mb-6">The Result</h2>
           <div className="text-[#a0a0a0] leading-[1.8]">
             <p>The system provides a complete inventory management solution with stock tracking, product and variant management, purchases, customers, sales, expenses, and reports. The project gave me practical experience in developing business-focused web applications, MySQL database management, and PHP backend integration.</p>

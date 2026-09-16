@@ -31,7 +31,7 @@ export default function FooterCTA({ onNavigate }) {
                 window.location.hash = 'projects';
               }
             }}
-            className="group relative overflow-hidden rounded-3xl bg-[#0f0f0f] p-6 block min-h-[250px] w-full text-left cursor-pointer"
+            className="group relative overflow-hidden rounded-[2rem] bg-[#0f0f0f] p-6 block min-h-[250px] w-full text-left cursor-pointer"
           >
             {/* Background Image Layer */}
             <motion.div
@@ -46,7 +46,7 @@ export default function FooterCTA({ onNavigate }) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
             
             <div className="relative z-10 flex h-full flex-col justify-between">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-black/40 backdrop-blur-md">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white/20 bg-black/40 backdrop-blur-md">
                 <Monitor size={16} className="text-lime" />
               </div>
               
@@ -65,7 +65,7 @@ export default function FooterCTA({ onNavigate }) {
           {/* Right Card: Why Work With Me */}
           <motion.div 
             variants={fadeInUp}
-            className="relative overflow-hidden rounded-3xl bg-lime p-8 min-h-[250px] flex flex-col justify-between"
+            className="relative overflow-hidden rounded-[2rem] bg-lime p-8 min-h-[250px] flex flex-col justify-between"
           >
             {/* Dotted Pattern top right */}
             <div className="absolute right-6 top-6 opacity-20">

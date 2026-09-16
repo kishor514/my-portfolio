@@ -68,7 +68,7 @@ export default function ProjectsPage({ onBack, onNavigate }) {
             <motion.div 
               variants={fadeInUp}
               key={idx} 
-              className="flex flex-col rounded-[2rem] bg-[#0c0c0c] border border-white/5 overflow-hidden cursor-pointer group hover:border-white/20 transition-colors"
+              className="flex flex-col rounded-[2.5rem] bg-[#0c0c0c] border-2 border-white/20 overflow-hidden cursor-pointer group hover:border-white/20 transition-colors"
               onClick={() => {
                 if (project.title.includes('Nearlook')) {
                   onNavigate('nearlook');
@@ -79,7 +79,7 @@ export default function ProjectsPage({ onBack, onNavigate }) {
                 }
               }}
             >
-              <div className="h-64 bg-[#141414] relative border-b border-white/5 overflow-hidden">
+              <div className="h-64 bg-[#141414] relative border-b border-white/15 overflow-hidden">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-8 flex flex-col flex-1">
@@ -89,7 +89,7 @@ export default function ProjectsPage({ onBack, onNavigate }) {
                 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tags.map(tag => (
-                    <span key={tag} className="px-4 py-1.5 rounded-full border border-white/10 bg-[#161616] text-[0.75rem] font-medium text-white/80">
+                    <span key={tag} className="px-4 py-1.5 rounded-full border-2 border-white/20 bg-[#161616] text-[0.75rem] font-medium text-white/80">
                       {tag}
                     </span>
                   ))}

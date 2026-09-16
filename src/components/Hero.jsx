@@ -74,7 +74,7 @@ export default function Hero() {
           variants={heroStagger}
           initial="hidden"
           animate="visible"
-          className="relative z-20 -mt-48 sm:-mt-56 md:-mt-64 flex flex-col rounded-t-[3rem] border-t border-white/20 bg-gradient-to-b from-black/50 via-black/80 to-black backdrop-blur-sm px-8 pb-10 pt-6 sm:px-12 sm:pb-16 sm:pt-8"
+          className="relative z-20 -mt-48 sm:-mt-56 md:-mt-64 flex flex-col rounded-t-[3.5rem] border-t border-white/20 bg-gradient-to-b from-black/50 via-black/80 to-black backdrop-blur-sm px-8 pb-10 pt-6 sm:px-12 sm:pb-16 sm:pt-8"
         >
 
           {/* Drag Handle */}
@@ -150,9 +150,7 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/logos/Resume-kishor (1).pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="hidden sm:inline-flex w-full items-center justify-between gap-3 rounded-full bg-lime py-1.5 pl-6 pr-1.5 text-lg font-medium text-black focus-ring sm:w-auto sm:justify-start"
             >
               My Resume
@@ -164,14 +162,14 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="#projects"
-              className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-6 py-4 text-lg font-semibold text-white transition-colors hover:bg-white/10 focus-ring sm:w-auto"
+              className="inline-flex w-full items-center justify-center rounded-full border-2 border-white/20 px-6 py-4 text-lg font-semibold text-white transition-colors hover:bg-white/10 focus-ring sm:w-auto"
             >
               My Works
             </motion.a>
           </motion.div>
 
           {/* Footer Links */}
-          <motion.div variants={fadeInUp} className="mt-8 flex w-full flex-col items-start gap-4 border-t border-white/10 pt-6 text-base sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+          <motion.div variants={fadeInUp} className="mt-8 flex w-full flex-col items-start gap-4 border-t border-white/20 pt-6 text-base sm:flex-row sm:items-center sm:justify-between sm:gap-3">
             <div className="flex items-center gap-2 text-white/70">
               <Globe size={18} />
               <span>Open to <span className="font-semibold text-white">Opportunities</span></span>

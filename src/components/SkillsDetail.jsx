@@ -35,7 +35,7 @@ export default function SkillsDetail({ onNavigate }) {
         viewport={{ once: true, amount: 0.2 }}
         className="mx-auto max-w-xl"
       >
-        <motion.div variants={fadeInUp} className="overflow-hidden rounded-[2.5rem] border border-white/10 bg-panel p-2">
+        <motion.div variants={fadeInUp} className="overflow-hidden rounded-[3rem] border-2 border-white/20 bg-panel p-2">
           <div className="flex gap-1 rounded-full bg-[#0a0a0a] p-1.5 relative">
             {Object.keys(tabs).map((tab) => (
               <button
@@ -98,7 +98,7 @@ export default function SkillsDetail({ onNavigate }) {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             href="#projects" 
-            className="focus-ring flex flex-1 items-center justify-center gap-3 rounded-[2rem] border border-white/10 py-5 transition-colors hover:bg-white/5"
+            className="focus-ring flex flex-1 items-center justify-center gap-3 rounded-[2.5rem] border-2 border-white/20 py-5 transition-colors hover:bg-white/5"
           >
             <Landmark size={20} className="text-lime" />
             <span className="font-semibold text-white">View</span>
@@ -107,7 +107,7 @@ export default function SkillsDetail({ onNavigate }) {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             href="#contact"
-            className="focus-ring flex flex-1 items-center justify-center gap-3 rounded-[2rem] border border-white/10 py-5 transition-colors hover:bg-white/5"
+            className="focus-ring flex flex-1 items-center justify-center gap-3 rounded-[2.5rem] border-2 border-white/20 py-5 transition-colors hover:bg-white/5"
           >
             <Phone size={20} className="text-lime" />
             <span className="font-semibold text-white">Contact Me</span>

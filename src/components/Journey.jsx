@@ -21,7 +21,7 @@ export default function Journey() {
         viewport={{ once: true, amount: 0.3, margin: "0px 0px -100px 0px" }}
         className="mx-auto grid max-w-2xl gap-4 sm:grid-cols-[1.3fr_1fr]"
       >
-        <motion.div variants={fadeInUp} className="rounded-3xl border border-white/10 bg-panel p-8 sm:col-span-2">
+        <motion.div variants={fadeInUp} className="rounded-[2rem] border-2 border-white/20 bg-panel p-8 sm:col-span-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-xs font-medium text-white/50">
               <span className="h-1.5 w-1.5 rounded-full bg-lime" />
@@ -41,7 +41,7 @@ export default function Journey() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           whileHover={{ scale: 1.02 }}
-          className="rounded-3xl bg-lime p-8 text-black transition-transform cursor-default"
+          className="rounded-[2rem] bg-lime p-8 text-black transition-transform cursor-default"
         >
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-black/70">
             <span className="h-1.5 w-1.5 rounded-full bg-black/70" />
@@ -62,7 +62,7 @@ export default function Journey() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           whileHover={{ scale: 1.02 }}
-          className="rounded-3xl border border-white/10 bg-panel p-8 transition-transform cursor-default"
+          className="rounded-[2rem] border-2 border-white/20 bg-panel p-8 transition-transform cursor-default"
         >
           <div className="flex items-center gap-2 text-xs font-medium text-white/50">
             <span className="h-1.5 w-1.5 rounded-full bg-white/50" />

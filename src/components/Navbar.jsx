@@ -20,7 +20,7 @@ export default function Navbar() {
       animate="visible"
       className="fixed top-4 left-0 right-0 z-50 px-4 sm:top-6"
     >
-      <nav className="mx-auto flex max-w-3xl items-center justify-between gap-4 rounded-full border border-white/10 bg-[#0a0a0a] px-5 py-3">
+      <nav className="mx-auto flex max-w-3xl items-center justify-between gap-4 rounded-full border-2 border-white/20 bg-[#0a0a0a] px-5 py-3">
         <motion.a 
           whileHover={{ scale: 1.05 }}
           href="#home" 
@@ -71,7 +71,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="origin-top mx-auto mt-2 flex max-w-3xl flex-col gap-1 rounded-3xl border border-white/10 bg-[#0a0a0a] p-4 md:hidden"
+            className="origin-top mx-auto mt-2 flex max-w-3xl flex-col gap-1 rounded-[2rem] border-2 border-white/20 bg-[#0a0a0a] p-4 md:hidden"
           >
             {links.map((link) => (
               <a

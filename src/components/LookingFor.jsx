@@ -39,7 +39,7 @@ export default function LookingFor() {
           Looking for the right opportunity to grow and contribute.
         </motion.p>
 
-        <motion.div variants={fadeInUp} className="mx-auto mt-16 flex min-h-[500px] w-full max-w-[600px] flex-col overflow-hidden rounded-[2.5rem] border border-[#222] bg-[#050505] p-10 shadow-2xl sm:p-12">
+        <motion.div variants={fadeInUp} className="mx-auto mt-16 flex min-h-[500px] w-full max-w-[600px] flex-col overflow-hidden rounded-[3rem] border-2 border-white/20 bg-[#050505] p-10 shadow-2xl sm:p-12">
           {/* Top Section */}
           <div className="flex items-start justify-between gap-4">
             <div className="flex flex-col items-start text-left">
@@ -54,7 +54,7 @@ export default function LookingFor() {
               <p className="mt-2 text-[0.95rem] font-medium text-white/40">Full-Stack Web Developer</p>
             </div>
 
-            <div className="relative flex h-[140px] w-[200px] flex-col rounded-3xl bg-lime pl-6 pb-6 pt-4 pr-4 text-left text-lg font-semibold text-black sm:h-[160px] sm:w-[240px]">
+            <div className="relative flex h-[140px] w-[200px] flex-col rounded-[2rem] bg-lime pl-6 pb-6 pt-4 pr-4 text-left text-lg font-semibold text-black sm:h-[160px] sm:w-[240px]">
               <AnimatePresence mode="popLayout">
                 <motion.div
                   key={currentSlide + 'role'}

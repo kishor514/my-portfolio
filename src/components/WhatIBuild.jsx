@@ -49,7 +49,7 @@ export default function WhatIBuild() {
         <motion.h2 variants={fadeInUp} className="text-4xl font-normal sm:text-5xl">What I <span className="font-extrabold">Build</span></motion.h2>
         <motion.p variants={fadeInUp} className="mt-3 text-white/50">Explore the website types.</motion.p>
 
-        <motion.div variants={fadeInUp} className="mx-auto mt-8 flex w-fit gap-1 rounded-full border border-white/15 p-1">
+        <motion.div variants={fadeInUp} className="mx-auto mt-8 flex w-fit gap-1 rounded-full border-2 border-white/20 p-1">
           {Object.keys(offerings).map((tab) => (
             <button
               key={tab}
@@ -69,9 +69,9 @@ export default function WhatIBuild() {
           ))}
         </motion.div>
 
-        <motion.div variants={fadeInUp} className="mx-auto mt-10 w-full max-w-[580px] rounded-[2rem] border border-[#222] bg-[#050505] p-2 text-left shadow-2xl">
+        <motion.div variants={fadeInUp} className="mx-auto mt-10 w-full max-w-[580px] rounded-[2.5rem] border-2 border-white/20 bg-[#050505] p-2 text-left shadow-2xl">
           {/* Top Nested Card */}
-          <div className="relative overflow-hidden rounded-[1.5rem] border border-[#222] border-b-lime border-r-lime bg-gradient-to-b from-[#111] to-[#0a0a0a] p-8">
+          <div className="relative overflow-hidden rounded-[2rem] border-2 border-white/20 border-b-lime border-r-lime bg-gradient-to-b from-[#111] to-[#0a0a0a] p-8">
             {/* Striped texture effect */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px)] bg-[size:12px_12px] opacity-30 [mask-image:radial-gradient(ellipse_60%_80%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
             

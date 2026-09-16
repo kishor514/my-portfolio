@@ -49,7 +49,7 @@ export default function Projects({ onNavigate }) {
               key={project.title}
               style={{ top: `calc(120px + ${index * 30}px)` }}
               id={`project-${project.title.includes('Nearlook') ? 'nearlook' : project.title.includes('Inventory') ? 'inventory' : 'realestate'}`}
-              className="sticky group overflow-hidden rounded-3xl border border-white/10 bg-panel transition-colors hover:border-white/20 cursor-pointer shadow-2xl"
+              className="sticky group overflow-hidden rounded-[2rem] border-2 border-white/20 bg-panel transition-colors hover:border-white/20 cursor-pointer shadow-2xl"
               onClick={() => {
                 if (project.title.includes('Nearlook')) {
                   onNavigate('nearlook');

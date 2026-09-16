@@ -51,7 +51,7 @@ export default function Contact() {
         viewport={{ once: true, amount: 0.2 }}
         className="mx-auto w-full max-w-[650px]"
       >
-        <motion.div variants={fadeInUp} className="rounded-[2rem] border border-[#222] border-b-lime border-r-lime bg-[#050505] p-8 sm:p-12 shadow-2xl">
+        <motion.div variants={fadeInUp} className="rounded-[2.5rem] border-2 border-white/20 border-b-lime border-r-lime bg-[#050505] p-8 sm:p-12 shadow-2xl">
           <h2 className="text-[3.5rem] font-bold leading-[1.1] sm:text-[4rem]">
             Let's
             <br />
@@ -90,7 +90,7 @@ export default function Contact() {
                 placeholder="Enter Your Name"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="focus-ring mt-3 w-full border-b border-[#222] bg-transparent pb-3 text-[0.9rem] text-white placeholder-white/30 outline-none transition-colors focus:border-lime"
+                className="focus-ring mt-3 w-full border-b border-white/15 bg-transparent pb-3 text-[0.9rem] text-white placeholder-white/30 outline-none transition-colors focus:border-lime"
                 required
               />
             </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                 placeholder="Enter your Email"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="focus-ring mt-3 w-full border-b border-[#222] bg-transparent pb-3 text-[0.9rem] text-white placeholder-white/30 outline-none transition-colors focus:border-lime"
+                className="focus-ring mt-3 w-full border-b border-white/15 bg-transparent pb-3 text-[0.9rem] text-white placeholder-white/30 outline-none transition-colors focus:border-lime"
                 required
               />
             </div>
@@ -120,7 +120,7 @@ export default function Contact() {
                 placeholder="Leave me a message"
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="focus-ring mt-3 w-full border-b border-[#222] bg-transparent pb-3 text-[0.9rem] text-white placeholder-white/30 outline-none transition-colors focus:border-lime"
+                className="focus-ring mt-3 w-full border-b border-white/15 bg-transparent pb-3 text-[0.9rem] text-white placeholder-white/30 outline-none transition-colors focus:border-lime"
                 required
               />
             </div>
@@ -160,7 +160,7 @@ export default function Contact() {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="bg-[#0c0c0c] border border-lime/30 rounded-[2rem] p-8 max-w-sm w-full text-center relative flex flex-col items-center shadow-2xl"
+              className="bg-[#0c0c0c] border border-lime/30 rounded-[2.5rem] p-8 max-w-sm w-full text-center relative flex flex-col items-center shadow-2xl"
             >
               <button 
                 onClick={() => setShowPopup(false)}

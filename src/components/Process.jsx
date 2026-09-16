@@ -57,7 +57,7 @@ export default function Process() {
               }}
               key={num}
               whileHover={{ scale: 1.02 }}
-              className="flex h-[176px] flex-col rounded-3xl border border-[#222] bg-[#0a0a0a] text-left shadow-lg cursor-default"
+              className="flex h-[176px] flex-col rounded-[2rem] border-2 border-white/20 bg-[#0a0a0a] text-left shadow-lg cursor-default"
             >
               <div className="flex flex-1 items-start justify-between p-5 pb-0">
                 <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-lime text-black">

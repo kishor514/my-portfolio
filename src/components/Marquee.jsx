@@ -2,7 +2,7 @@ export default function Marquee({ text = 'Explore my services' }) {
   const items = Array.from({ length: 8 }).fill(text)
 
   return (
-    <div className="overflow-hidden border-y border-white/10 bg-panel py-4 sm:py-8 hover:[&_.marquee-track]:[animation-play-state:paused]">
+    <div className="overflow-hidden border-y border-white/20 bg-panel py-4 sm:py-8 hover:[&_.marquee-track]:[animation-play-state:paused]">
       <div className="marquee-track" style={{ animationDuration: '120s' }}>
         {[...items, ...items].map((item, i) => (
           <span

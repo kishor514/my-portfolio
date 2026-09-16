@@ -24,7 +24,7 @@ export default function FrontendPage({ onBack, onNavigate }) {
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          className="rounded-[2.5rem] bg-[#0c0c0c] p-10 sm:p-16 flex flex-col items-center text-center shadow-2xl border border-white/5"
+          className="rounded-[3rem] bg-[#0c0c0c] p-10 sm:p-16 flex flex-col items-center text-center shadow-2xl border-2 border-white/20"
         >
           <motion.div variants={fadeInUp} className="flex h-24 w-24 items-center justify-center rounded-full bg-[#161616] mb-10 shadow-inner">
             <Monitor size={40} className="text-blue-500" strokeWidth={1.5} />
@@ -43,7 +43,7 @@ export default function FrontendPage({ onBack, onNavigate }) {
               <motion.div 
                 whileHover={{ scale: 1.05 }}
                 key={tech} 
-                className="px-6 py-2.5 rounded-full border border-white/5 bg-[#111] text-[0.85rem] font-medium text-lime transition-colors hover:bg-[#1a1a1a] cursor-default"
+                className="px-6 py-2.5 rounded-full border-2 border-white/20 bg-[#111] text-[0.85rem] font-medium text-lime transition-colors hover:bg-[#1a1a1a] cursor-default"
               >
                 {tech}
               </motion.div>

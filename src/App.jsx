@@ -29,8 +29,28 @@ import InventoryPage from './components/InventoryPage'
 import RealEstatePage from './components/RealEstatePage'
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState('home')
-  const [scrollTo, setScrollTo] = useState(null)
+  const [currentPage, setCurrentPage] = useState(() => {
+    const hash = window.location.hash.replace('#', '');
+    return hash || 'home';
+  });
+  const [scrollTo, setScrollTo] = useState(null);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      setCurrentPage(hash || 'home');
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const navigate = (page, scrollId = null) => {
+    window.location.hash = page;
+    setCurrentPage(page);
+    if (scrollId) {
+      setScrollTo(scrollId);
+    }
+  };
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -79,16 +99,16 @@ export default function App() {
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'frontend': return <FrontendPage onBack={() => setCurrentPage('home')} onNavigate={setCurrentPage} />
-      case 'backend': return <BackendPage onBack={() => setCurrentPage('home')} onNavigate={setCurrentPage} />
-      case 'database': return <DatabasePage onBack={() => setCurrentPage('home')} onNavigate={setCurrentPage} />
-      case 'uistyling': return <UIStylingPage onBack={() => setCurrentPage('home')} onNavigate={setCurrentPage} />
-      case 'tools': return <ToolsPage onBack={() => setCurrentPage('home')} onNavigate={setCurrentPage} />
-      case 'deployment': return <DeploymentPage onBack={() => setCurrentPage('home')} onNavigate={setCurrentPage} />
-      case 'projects': return <ProjectsPage onBack={() => setCurrentPage('home')} onNavigate={setCurrentPage} />
-      case 'nearlook': return <NearlookPage onBack={() => { setCurrentPage('home'); setScrollTo('project-nearlook'); }} onNavigate={setCurrentPage} />
-      case 'inventory': return <InventoryPage onBack={() => { setCurrentPage('home'); setScrollTo('project-inventory'); }} onNavigate={setCurrentPage} />
-      case 'realestate': return <RealEstatePage onBack={() => { setCurrentPage('home'); setScrollTo('project-realestate'); }} onNavigate={setCurrentPage} />
+      case 'frontend': return <FrontendPage onBack={() => navigate('home')} onNavigate={navigate} />
+      case 'backend': return <BackendPage onBack={() => navigate('home')} onNavigate={navigate} />
+      case 'database': return <DatabasePage onBack={() => navigate('home')} onNavigate={navigate} />
+      case 'uistyling': return <UIStylingPage onBack={() => navigate('home')} onNavigate={navigate} />
+      case 'tools': return <ToolsPage onBack={() => navigate('home')} onNavigate={navigate} />
+      case 'deployment': return <DeploymentPage onBack={() => navigate('home')} onNavigate={navigate} />
+      case 'projects': return <ProjectsPage onBack={() => navigate('home')} onNavigate={navigate} />
+      case 'nearlook': return <NearlookPage onBack={() => navigate('home', 'project-nearlook')} onNavigate={navigate} />
+      case 'inventory': return <InventoryPage onBack={() => navigate('home', 'project-inventory')} onNavigate={navigate} />
+      case 'realestate': return <RealEstatePage onBack={() => navigate('home', 'project-realestate')} onNavigate={navigate} />
       case 'home':
       default:
         return (
@@ -98,17 +118,17 @@ export default function App() {
               <Hero />
               <TechStack />
               <Journey />
-              <Projects onNavigate={setCurrentPage} />
+              <Projects onNavigate={navigate} />
               <ExperienceTimeline />
-              <SkillsDetail onNavigate={setCurrentPage} />
+              <SkillsDetail onNavigate={navigate} />
               <Marquee text="Explore my service" />
-              <SkillsGrid onNavigate={setCurrentPage} />
+              <SkillsGrid onNavigate={navigate} />
               <Process />
               <LookingFor />
               <WhatIBuild />
               <FAQ />
               <Contact />
-              <FooterCTA onNavigate={setCurrentPage} />
+              <FooterCTA onNavigate={navigate} />
             </main>
           </>
         )

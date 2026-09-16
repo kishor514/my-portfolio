@@ -80,8 +80,8 @@ export default function SkillsGrid({ onNavigate }) {
                 }
               }}
             >
-              <div className="group relative flex w-full flex-col items-center rounded-[5rem] border-[3px] border-[#222] bg-[#050505] pb-8 transition-colors hover:border-white/20 overflow-hidden">
-                <div className={`m-1.5 flex h-28 sm:h-32 w-[calc(100%-12px)] items-center justify-center rounded-t-[4.5rem] rounded-b-[2rem] bg-[#141414] overflow-hidden ${pad}`}>
+              <div className="group relative flex w-full flex-col items-center rounded-[5rem] border-[3px] border-white/15 bg-[#050505] pb-8 transition-colors hover:border-white/20 overflow-hidden">
+                <div className={`m-1.5 flex h-28 sm:h-32 w-[calc(100%-12px)] items-center justify-center rounded-t-[4.5rem] rounded-b-[2.5rem] bg-[#141414] overflow-hidden ${pad}`}>
                   <img src={img} alt={label} className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-110" />
                 </div>
                 <div className="mt-4 flex flex-col items-center px-2 text-center transition-opacity duration-300 group-hover:opacity-20">
