@@ -150,8 +150,10 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#contact"
-              className="hidden sm:inline-flex w-full items-center justify-between gap-3 rounded-full bg-lime py-1.5 pl-6 pr-1.5 text-lg font-medium text-black focus-ring sm:w-auto sm:justify-start"
+              href="/logos/Resume-kishor (1).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-lime py-1.5 pl-6 pr-1.5 text-lg font-medium text-black focus-ring sm:w-auto sm:justify-start"
             >
               My Resume
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1a1a1a] text-white">
